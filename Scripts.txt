@@ -1,4 +1,4 @@
-hostname= api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, m.pearkin.com, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,
+hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, m.pearkin.com, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,
 
 #🍌视频
 ^https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
@@ -23,4 +23,6 @@ hostname= api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, 
 #Bahamut
 https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
+#Keep
+^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js
 
