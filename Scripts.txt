@@ -14,7 +14,7 @@ hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, ap
 ^https:\/\/m\.pearkin\.com\/(api\/Movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/pear.js
 #淘宝比价
 ^https?://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
-^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+^https?://(trade-acs \.m\.taobao\.com |amdc\.m\.taobao\.com|.+)/(gw/mtop\.taobao\.detail\.getdetail|amdc/mobileDispatch) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 #Netflix评分
 ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
