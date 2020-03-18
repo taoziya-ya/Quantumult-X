@@ -1,5 +1,8 @@
-hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, m.pearkin.com, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,
+hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, m.pearkin.com, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi
 
+
+#轻颜相机
+^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/qyxj.js
 #🍌视频
 ^https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
 #91视频
