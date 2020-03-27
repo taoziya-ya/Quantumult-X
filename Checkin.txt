@@ -44,7 +44,7 @@ https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo url script-req
 #时光相册
 ^https:\/\/api.everphoto.cn\/users\/self\/checkin\/v2 url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.cookie.js
 #微信小程序
-https://github.com/zZPiglet/Task/blob/master/WeChatLottery/WeChatLottery_maybesafe.js
+^https:\/\/api-hdcj\.9w9\.com\/v1\/sign url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_maybesafe.js.js
 #饿了么
 ^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$ url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/elemGetCookies.js
 #蔚来
