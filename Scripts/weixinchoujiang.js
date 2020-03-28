@@ -40,13 +40,13 @@ hostname = api-hdcj.9w9.com
 */
 
 
-const CheckinURL = 'https://api-hdcj.9w9.com/v1/sign/sign'
-const CheckindataURL = 'https://api-hdcj.9w9.com/v1/sign'
-const DataURL = 'https://api-hdcj.9w9.com/v1/informations'
-const IndexURL = 'https://api-hdcj.9w9.com/v1/index?type=0&gzh_number='
-const JoinURL = 'https://api-hdcj.9w9.com/v1/lotteries/'
-const ExchangeURL = 'https://api-hdcj.9w9.com/v1/limit_red_envelopes/453'
-const DailyURL = 'https://api-hdcj.9w9.com/v1/tasks/80'
+const CheckinURL = 'https://api-hdcj.9w9.com/v2/sign/sign'
+const CheckindataURL = 'https://api-hdcj.9w9.com/v2/sign'
+const DataURL = 'https://api-hdcj.9w9.com/v2/informations'
+const IndexURL = 'https://api-hdcj.9w9.com/v2/index?type=0&gzh_number='
+const JoinURL = 'https://api-hdcj.9w9.com/v2/lotteries/'
+const ExchangeURL = 'https://api-hdcj.9w9.com/v2/limit_red_envelopes/453'
+const DailyURL = 'https://api-hdcj.9w9.com/v2/tasks/80'
 const TokenName = '活动签到'
 const TokenKey = 'wclotterynew'
 const UidKey = 'wcluid'
