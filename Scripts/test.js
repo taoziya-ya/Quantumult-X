@@ -4,7 +4,7 @@ doshare()
 
 function doshare() {
     const LotteryShare = {
-        url: ShareURL
+        url: ShareURL,
         headers: {
             "token": $cmp.read('wclotterynew'),
             "uid": $cmp.read('wcluid'),
