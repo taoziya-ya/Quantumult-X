@@ -1,5 +1,8 @@
-hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, m.pearkin.com, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.api.versa-ai.com
+hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, m.pearkin.com, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.api.versa-ai.com,*.bjxkhc.com
 
+
+#韩剧TV
+^https\:\/\/hjapi\.bjxkhc\.com\/v2d2\/users\/.*\/member url script-response-body    https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/hanjuTV.js
 #马卡龙
 https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/mkl.js
 #轻颜相机
