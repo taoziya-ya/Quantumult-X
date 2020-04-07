@@ -43,7 +43,7 @@ https:\/\/www\.52pojie\.cn\/home\.php\?mod=space url script-request-header https
 #美团
 ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
 #活动抽奖
-^https:\/\/api-hdcj\.9w9\.com\/v2\/sign url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
+^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
 #饿了么
 ^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$ url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/elemGetCookies.js
 #蔚来
