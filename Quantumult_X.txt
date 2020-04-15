@@ -125,7 +125,6 @@ final, Global
 01 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.js, enabled=true
 #蔚来
 01 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.js, enabled=true
-#时光相册
 #抽奖
 01 0,21 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js, enabled=true
 #美团
@@ -134,7 +133,6 @@ final, Global
 04 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, enabled=true
 # 52pojie daily bonus script
 04 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/52pojie-DailyBonus/52pojie_DailyBonus_QX.js, enabled=true
-#携程
 #什么值得买
 04 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.js, enabled=true
 #电信
