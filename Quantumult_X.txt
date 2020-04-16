@@ -77,7 +77,7 @@ https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Region.t
 
 [rewrite_remote]
 https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Rewrite.txt, tag=eHpo, enabled=true
-https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Checkin.txt, tag=签到, enabled=true
+https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/checkin.txt, tag=签到, enabled=true
 https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts.txt, tag=桃子, enabled=true
 
 
