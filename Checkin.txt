@@ -1,58 +1,143 @@
-hostname = daojia.jd.com, wxprdapplet.gac-nio.com, app.nio.com  ,h5.ele.me, new.api.hdcj.9w9.com ,api.m.jd.com, music.163.com, c.tieba.baidu.com, weibo.com, *.iqiyi.com, *.smzdm.com, *.v2ex.com, www.52pojie.cn, *.bilibili.com, *.feng.com, *.video.qq.com, *.acfun.cn, *.rrys2019.com, mobwsa.ximalaya.com, *.rr.tv, wapside.189.cn, *.weixinjia.net, h5.ele.me, *.you.163.com, apk.tw, api.dongqiudi.com, *.m.163.com, user.qunar.com, yuba.douyu.com, ios.zmzapi.com, *.y.qq.com, *.csdn.net, m.ctrip.com, m.gdoil.cn, credits.bz.mgtv.com, api-takumi.mihoyo.com, act.10010.com, e.189.cn,  www.maomicd.com, wx.10086.cn, mtrace.qq.com, v.qq.com, www.lltxt.com, weclub.ccc.cmbchina.com, promotion.waimai.meituan.com, i.meituan.com, daojia.jd.com, api.everphoto.cn, group.baicizhan.com, maicai.api.ddxq.mobi,*.bilibili.com,110.43.90.61, zt.wps.cn,passport.suning.com, luckman.suning.com, sign.suning.com, gameapi.suning.com,iphone.myzaker.com,api-hdcj.9w9.com,draw.jdfcloud.com,sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com,api.1sapp.com
+//填入想要自动兑换的金额，默认 50。
+const exchangeMoney = 50 //5, 20
+const ExchangeURL = 'https://api-hdcj.9w9.com/v1/limit_red_envelopes/'
+let exchangeId = 52
+if (exchangeMoney == 5) {
+    exchangeId = 454
+} else if (exchangeMoney == 20) {
+    exchangeId = 455
+}
+const $cmp = compatibility()
+Exchange()
 
 
-#趣头条
-^https:\/\/api\.1sapp\.com\/sign\/info? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-^https:\/\/api\.1sapp\.com\/content\/readV2? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-#电视家
-http:\/\/act\.gaoqingdianshi\.com\/\/api\/v4\/sign\/signin\?accelerate=0&ext=0&ticket= url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/dianshijia.js
-#京东来客
-https:\/\/draw\.jdfcloud\.com\/\/api\/turncard\/sign\? url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/JDLK_cookie.js
-#Zaker
-^https:\/\/iphone\.myzaker\.com\/zaker\/sign_in\/\/api\/sign_in\.php url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/zaker/zaker.js
-#顺丰
-^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
-^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/app\/shareRedirect url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
-#苏宁
-^https:\/\/passport.suning.com\/ids\/login$ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do) url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-#京东
-https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-#爱奇艺获取cookie
-https?:\/\/.*\.iqiyi\.com\/.*authcookie= url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/iQIYI-DailyBonus/iQIYI_GetCookie_QX.js
-#贴吧签到获取cookie
-https?:\/\/c\.tieba\.baidu\.com\/c\/s\/login url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/TieBa_GetCookie_QX.js
-#52破解论坛获取Cookie
-https:\/\/www\.52pojie\.cn\/home\.php\?mod=space url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/52pojie-DailyBonus/52pojie_GetCookie_QX.js
-#什么值得买获取cookie(by chavyleung)
-^https:\/\/www\.smzdm\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.cookie.js
-#腾讯视频获取cookie
-^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
-^https?:\/\/v.qq.com\/x\/bu\/mobile_checkin url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
-#电信营业厅获取cookie
-^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
-^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo url script-response-body https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
-#懂球帝获取cookie
-^https:\/\/api\.dongqiudi\.com\/v2\/user\/is_login url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/dongqiudi/dongqiudi.cookie.js
-#美团外卖 获取cookie
-^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
-^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
-#美团
-^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
-#活动抽奖
-^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
-#饿了么
-^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$ url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/elemGetCookies.js
-#蔚来
-^https:\/\/app\.nio\.com\/api\/1\/app\/daily_checkin url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.cookie.js
-#合创
-^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/v3\.1\.3\.5\/signV2$ url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.cookie.js
-#京东到家
-https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/jddj_cookie.js
+function Exchange() {
+    const LotteryExchange = {
+        url: ExchangeURL + exchangeId,
+        headers: {
+            "token" : $cmp.read('wclotterynew'),
+            "uid" : $cmp.read('wcluid'),
+        }
+    }
+    $cmp.post(LotteryExchange, function(error, response, data) {
+        if (error) {
+            $cmp.log("wclexchange failed response: \n", error)
+            $cmp.notify("活动抽奖", "兑换 " + exchangeMoney + " 元失败", "兑换接口请求失败，详情请看日志。")
+        } else {
+            const exchange = JSON.parse(data)
+            if (exchange.success == true) {
+                exmoney += Number(exchange.data.money)
+                $cmp.notify("活动抽奖", "", "兑换 " + exmoney + " 元成功")
+            } else {
+                $cmp.log("wclexchange failed response: \n" + JSON.stringify(exchange))
+                $cmp.notify("活动抽奖", "兑换 " + exchangeMoney + " 元失败", exchange.message.error + "，详情请看日志")
+            }
+        }
+    })
+}
 
-
-
-
+function compatibility() {
+    const isRequest = typeof $request != "undefined"
+    const isSurge = typeof $httpClient != "undefined"
+    const isQuanX = typeof $task != "undefined"
+    const isJSBox = typeof $app != "undefined" && typeof $http != "undefined"
+    const isNode = typeof require == "function" && !isJSBox;
+    const node = (() => {
+        if (isNode) {
+            const request = require('request');
+            return ({request})
+        } else {
+            return (null)
+        }
+    })()
+    const notify = (title, subtitle, message) => {
+        if (isQuanX) $notify(title, subtitle, message)
+        if (isSurge) $notification.post(title, subtitle, message)
+        if (isNode) log(title+subtitle+message)
+        if (isJSBox) $push.schedule({title: title, body: subtitle?subtitle+"\n"+message:message})
+    }
+    const write = (value, key) => {
+        if (isQuanX) return $prefs.setValueForKey(value, key)
+        if (isSurge) return $persistentStore.write(value, key)
+    }
+    const read = (key) => {
+        if (isQuanX) return $prefs.valueForKey(key)
+        if (isSurge) return $persistentStore.read(key)
+    }
+    const adapterStatus = (response) => {
+        if (response) {
+            if (response.status) {
+                response["statusCode"] = response.status
+            } else if (response.statusCode) {
+                response["status"] = response.statusCode
+            }
+        }
+        return response
+    }
+    const get = (options, callback) => {
+        if (isQuanX) {
+            if (typeof options == "string") options = { url: options }
+            options["method"] = "GET"
+            $task.fetch(options).then(response => {
+                callback(null, adapterStatus(response), response.body)
+            }, reason => callback(reason.error, null, null))
+        }
+        if (isSurge) $httpClient.get(options, (error, response, body) => {
+            callback(error, adapterStatus(response), body)
+        })
+        if (isNode) {
+            node.request(options, (error, response, body) => {
+                callback(error, adapterStatus(response), body)
+            })
+        }
+        if (isJSBox) {
+            if (typeof options == "string") options = {url: options}
+            options["header"] = options["headers"]
+            options["handler"] = function (resp) {
+                let error = resp.error;
+                if (error) error = JSON.stringify(resp.error)
+                let body = resp.data;
+                if (typeof body == "object") body = JSON.stringify(resp.data);
+                callback(error, adapterStatus(resp.response), body)
+            };
+            $http.get(options);
+        }
+    }
+    const post = (options, callback) => {
+        if (isQuanX) {
+            if (typeof options == "string") options = { url: options }
+            options["method"] = "POST"
+            $task.fetch(options).then(response => {
+                callback(null, adapterStatus(response), response.body)
+            }, reason => callback(reason.error, null, null))
+        }
+        if (isSurge) {
+            $httpClient.post(options, (error, response, body) => {
+                callback(error, adapterStatus(response), body)
+            })
+        }
+        if (isNode) {
+            node.request.post(options, (error, response, body) => {
+                callback(error, adapterStatus(response), body)
+            })
+        }
+        if (isJSBox) {
+            if (typeof options == "string") options = {url: options}
+            options["header"] = options["headers"]
+            options["handler"] = function (resp) {
+                let error = resp.error;
+                if (error) error = JSON.stringify(resp.error)
+                let body = resp.data;
+                if (typeof body == "object") body = JSON.stringify(resp.data)
+                callback(error, adapterStatus(resp.response), body)
+            }
+            $http.post(options);
+        }
+    }
+    const log = (message) => console.log(message)
+    const done = (value = {}) => {
+        if (isQuanX) isRequest ? $done(value) : null
+        if (isSurge) isRequest ? $done(value) : $done()
+    }
+    return { isQuanX, isSurge, isJSBox, isRequest, notify, write, read, get, post, log, done }
+}
