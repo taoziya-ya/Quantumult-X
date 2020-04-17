@@ -51,7 +51,6 @@ static=GlobalMedia, Global, Domestic, Proxy,img-url=https://raw.githubuserconten
 
 
 [server_remote]
-https://subconverter-web.now.sh/sub?target=quanx&url=https%3A%2F%2Fplus.5625f28900361376.com%2Fs%2FJgfmzUJQ&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&exclude=%E5%85%8D%E8%B4%B9&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, tag=BigHead, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png,enabled=true
 
 
 [filter_remote]
