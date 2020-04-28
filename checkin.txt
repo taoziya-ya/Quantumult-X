@@ -1,7 +1,7 @@
 hostname = daojia.jd.com, wxprdapplet.gac-nio.com, app.nio.com  ,h5.ele.me, new.api.hdcj.9w9.com ,api.m.jd.com, music.163.com, c.tieba.baidu.com, weibo.com, *.iqiyi.com, *.smzdm.com, *.v2ex.com, www.52pojie.cn, *.bilibili.com, *.feng.com, *.video.qq.com, *.acfun.cn, *.rrys2019.com, mobwsa.ximalaya.com, *.rr.tv, wapside.189.cn, *.weixinjia.net, h5.ele.me, *.you.163.com, apk.tw, api.dongqiudi.com, *.m.163.com, user.qunar.com, yuba.douyu.com, ios.zmzapi.com, *.y.qq.com, *.csdn.net, m.ctrip.com, m.gdoil.cn, credits.bz.mgtv.com, api-takumi.mihoyo.com, act.10010.com, e.189.cn,  www.maomicd.com, wx.10086.cn, mtrace.qq.com, v.qq.com, www.lltxt.com, weclub.ccc.cmbchina.com, promotion.waimai.meituan.com, i.meituan.com, daojia.jd.com, api.everphoto.cn, group.baicizhan.com, maicai.api.ddxq.mobi,*.bilibili.com,110.43.90.61, zt.wps.cn,passport.suning.com, luckman.suning.com, sign.suning.com, gameapi.suning.com,iphone.myzaker.com,api-hdcj.9w9.com,draw.jdfcloud.com,sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com,api.1sapp.com,api.inews.qq.com
 
 #腾讯新闻
-https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/txnews.js
+https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js
 #趣头条
 ^https:\/\/api\.1sapp\.com\/sign\/info? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
 ^https:\/\/api\.1sapp\.com\/content\/readV2? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
