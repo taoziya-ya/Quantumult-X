@@ -1,3 +1,5 @@
+const str = 'dataEncStr=asfhakjgwvhjavsfasf'
+console.log(str.indexOf('EncStr='))
 const cookieName = '米读'
 const readTimeurlKey = 'senku_readTimeurl_midu'
 const readTimeheaderKey = 'senku_readTimeheader_midu'
@@ -11,12 +13,15 @@ if ($request && $request.method != 'OPTIONS' && requrl.match(/\/user\/readTimeBa
         const readTimeurlVal = requrl
         const readTimebodyVal = $request.body
         const readTimeheaderVal = $request.headers
+        senku.log(readTimebodyVal)
         if (readTimeurlVal && readTimebodyVal && readTimeheaderVal) {
-            senku.setdata(readTimeurlVal, readTimeurlKey)
-            senku.setdata(readTimeheaderVal, readTimeheaderKey)
-            senku.setdata(readTimebodyVal, readTimebodyKey)
-            senku.msg(cookieName, `阅读时长,获取Cookie: 成功`, ``)
-            senku.log(`🔔${readTimeurlVal},🔔${readTimeheaderVal},🔔${readTimebodyVal}`)
+            if (readTimebodyVal.indexOf('EncStr=') > 0) {
+                senku.setdata(readTimeurlVal, readTimeurlKey)
+                senku.setdata(readTimeheaderVal, readTimeheaderKey)
+                senku.setdata(readTimebodyVal, readTimebodyKey)
+                senku.msg(cookieName, `阅读时长,获取Cookie: 成功`, ``)
+                senku.log(`🔔${readTimeurlVal},🔔${readTimeheaderVal},🔔${readTimebodyVal}`)
+            }
         }
     } catch (error) {
         senku.log(`❌error:${error}`)
