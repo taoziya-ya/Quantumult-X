@@ -11,22 +11,38 @@ const readTimeurlVal = senku.getdata(readTimeurlKey)
 const readTimeheaderVal = senku.getdata(readTimeheaderKey)
 const readTimebodyVal = senku.getdata(readTimebodyKey)
 const signinfo = {}
-
+let subTitle = ''
+let detail = ''
     ; (sign = async () => {
         senku.log(`🔔 ${cookieName}`)
         await readTime()
-        showmsg()
+        // showmsg()
         senku.done()
     })().catch((e) => senku.log(`❌ ${cookieName} 签到失败: ${e}`), senku.done())
 
 
 function readTime() {
     return new Promise((resolve, reject) => {
-        const url = { url: readTimeurlVal, headers: readTimeheaderVal, body: readTimebodyVal }
+        const url = { url: readTimeurlVal, headers: JSON.parse(readTimeheaderVal), body: readTimebodyVal }
         senku.post(url, (error, response, data) => {
             try {
                 senku.log(`❕ ${cookieName} readTime - response: ${JSON.stringify(response)}`)
                 signinfo.readTime = JSON.parse(data)
+                if (signinfo.readTime && signinfo.readTime.code == 0) {
+                    const coin = signinfo.readTime.data.coin
+                    const readTotalMinute = signinfo.readTime.data.readTotalMinute
+                    coin == 0 ? detail += `` : detail += `【阅读时长】获得${coin}💰`
+                    if (readTotalMinute % 40 == 0) {
+                        detail += ` 阅读时长${readTotalMinute / 2}分钟\n`
+                        senku.msg(cookieName, subTitle, detail)
+                    }
+                } else if (signinfo.readTime.code != 0) {
+                    detail += `【阅读时长】错误代码${signinfo.readTime.code},错误信息${signinfo.readTime.message}\n`
+                    senku.msg(cookieName, subTitle, detail)
+                } else {
+                    detail += '【阅读时长】失败\n'
+                    senku.msg(cookieName, subTitle, detail)
+                }
                 resolve()
             } catch (e) {
                 senku.msg(cookieName, `阅读时长: 失败`, `说明: ${e}`)
@@ -39,17 +55,8 @@ function readTime() {
 }
 
 function showmsg() {
-    let subTitle = ''
-    let detail = ''
-
-    if (signinfo.readTime && signinfo.readTime.code == 0) {
-        const coin = signinfo.readTime.data.coin
-        const readTotalMinute = signinfo.readTime.data.readTotalMinute
-        coin == 0 ? detail += `` : detail += `【阅读时长】获得${coin}💰`
-        readTotalMinute % 5 == 0 ? detail += ` 阅读时长${readTotalMinute / 2}分钟\n` : detail += `\n`
-    } else if (signinfo.readTime.code != 0) {
-        detail += `【阅读时长】错误代码${signinfo.readTime.code},错误信息${signinfo.readTime.message}\n`
-    } else detail += '【阅读时长】失败\n'
+    subTitle += ''
+    detail += ''
 
     senku.msg(cookieName, subTitle, detail)
     senku.done()

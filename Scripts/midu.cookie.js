@@ -12,7 +12,7 @@ if ($request && $request.method != 'OPTIONS' && requrl.match(/\/user\/readTimeBa
     try {
         const readTimeurlVal = requrl
         const readTimebodyVal = $request.body
-        const readTimeheaderVal = $request.headers
+        const readTimeheaderVal = JSON.stringify($request.headers)
         senku.log(readTimebodyVal)
         if (readTimeurlVal && readTimebodyVal && readTimeheaderVal) {
             if (readTimebodyVal.indexOf('EncStr=') > 0) {
