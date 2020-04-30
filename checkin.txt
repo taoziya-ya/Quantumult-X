@@ -2,7 +2,7 @@ hostname = daojia.jd.com, wxprdapplet.gac-nio.com, app.nio.com  ,h5.ele.me, new.
 
 
 #米读
-^https:\/\/apiwz\.midukanshu\.com\/user\/readTimeBase\/readTime url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/midu/midu.cookie.js
+^https:\/\/apiwz\.midukanshu\.com url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/midu/midu.cookie.js
 #腾讯新闻
 https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js
 #趣头条
