@@ -1,26 +1,21 @@
-const str = 'dataEncStr=asfhakjgwvhjavsfasf'
-console.log(str.indexOf('EncStr='))
 const cookieName = '米读'
-const readTimeurlKey = 'senku_readTimeurl_midu'
-const readTimeheaderKey = 'senku_readTimeheader_midu'
 const readTimebodyKey = 'senku_readTimebody_midu'
+const readTimeheaderKey = 'senku_readTimeheader_midu'
+const signbodyKey = 'senku_signbody_midu'
 const senku = init()
 
 const requrl = $request.url
 
 if ($request && $request.method != 'OPTIONS' && requrl.match(/\/user\/readTimeBase\/readTime/)) {
     try {
-        const readTimeurlVal = requrl
         const readTimebodyVal = $request.body
         const readTimeheaderVal = JSON.stringify($request.headers)
-        senku.log(readTimebodyVal)
-        if (readTimeurlVal && readTimebodyVal && readTimeheaderVal) {
+        if (readTimebodyVal) {
             if (readTimebodyVal.indexOf('EncStr=') > 0) {
-                senku.setdata(readTimeurlVal, readTimeurlKey)
-                senku.setdata(readTimeheaderVal, readTimeheaderKey)
                 senku.setdata(readTimebodyVal, readTimebodyKey)
+                senku.setdata(readTimeheaderVal, readTimeheaderKey)
                 senku.msg(cookieName, `阅读时长,获取Cookie: 成功`, ``)
-                senku.log(`🔔${readTimeurlVal},🔔${readTimeheaderVal},🔔${readTimebodyVal}`)
+                senku.log(`🔔${readTimeheaderVal}`)
             }
         }
     } catch (error) {
@@ -28,6 +23,18 @@ if ($request && $request.method != 'OPTIONS' && requrl.match(/\/user\/readTimeBa
     }
 }
 
+if ($request && $request.method != 'OPTIONS' && requrl.match(/\/wz\/task\/listV2/)) {
+    try {
+        const signbodyVal = $request.body
+        if (signbodyVal) {
+            senku.setdata(signbodyVal, signbodyKey)
+            senku.msg(cookieName, `签到,获取Cookie: 成功`, ``)
+            senku.log(`🔔${signbodyVal}`)
+        }
+    } catch (error) {
+        senku.log(`❌error:${error}`)
+    }
+}
 function init() {
     isSurge = () => {
         return undefined === this.$httpClient ? false : true
