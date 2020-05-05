@@ -104,8 +104,8 @@ final, Global
 (?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 8.0.0
 
 [task_local]
-0 * * * * https://raw.githubusercontent.com/GideonSenku/scripts/master/midu/miduSign.js, tag=米读签到, enabled=true
-0 * * * * https://raw.githubusercontent.com/GideonSenku/scripts/master/midu/miduRead.js, tag=米读阅读, enabled=true
+01 0-8 * * * https://raw.githubusercontent.com/GideonSenku/scripts/master/midu/miduSign.js, tag=米读签到, enabled=true
+*/60 0-9 * * * https://raw.githubusercontent.com/GideonSenku/scripts/master/midu/miduRead.js, tag=米读阅读, enabled=true
 #京东来客
 01 8,9,10 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js, tag=来客有礼, enabled=true
 #顺丰
