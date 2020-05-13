@@ -2,16 +2,17 @@
 
 赞赏:中青邀请码`46308484`,农妇山泉 -> 有点咸，万分感谢
 
-
+本脚本仅适用于中青看点极速版领取青豆
 
 获取Cookie方法:
 1.将下方[rewrite_local]和[MITM]地址复制的相应的区域
 下，
 2.进入app，签到一次,即可获取Cookie. 阅读一篇文章，获取阅读请求body，激励视频还未找到入口，如找到入口，可私信我
-
 3.当日签过到需次日获取Cookie.
-
+4.增加转盘抽奖通知间隔，默认每十次转盘抽奖通知一次，可自行修改
 5.非专业人士制作，欢迎各位大佬提出宝贵意见和指导
+
+阅读奖励和看视频得奖励一个请求只能运行三次‼️，请不要询问为什么，次日可以继续
 
 仅测试Quantumult X
 by Macsuny
@@ -55,6 +56,8 @@ hostname = kd.youth.cn, ios.baertt.com
 
 */
 
+
+const notifyInterval = `10`  //通知间隔，默认抽奖每10次通知一次
 const CookieName = "中青看点"
 const signurlKey ='youthurl_zq'
 const signheaderKey = 'youthheader_zq'
@@ -103,6 +106,9 @@ async function all()
   await readArticle();
   await Articlered();
   await rotary();
+  await rotary2();
+  await rotary3();
+  await rotary4();
 }
 
 function sign() {      
@@ -125,7 +131,7 @@ function sign() {
           detail= ``
          }
        })
-resolve()
+  resolve()
      })
   }
       
@@ -137,7 +143,7 @@ function signInfo() {
 }
    sy.post(infourl, (error, response, data) =>
  {
-     sy.log(`${CookieName}, data: ${data}`)
+     //sy.log(`${CookieName}, data: ${data}`)
       signinfo =JSON.parse(data)
       if (signinfo.status == 1){
 
@@ -177,10 +183,10 @@ function getAdVideo() {
 }
   url.headers['Host']='kd.youth.cn'
    sy.post(url, (error, response, data) =>{
-   sy.log(`advideodata:${data}`)
+   sy.log(`视频广告:${data}`)
    adVideores = JSON.parse(data)
    if (adVideores.status==1){
-  detail += `看视频获得${adVideores.score}个青豆 ` }
+  detail += `\n看视频获得${adVideores.score}个青豆 ` }
   })
 resolve()
  })
@@ -194,7 +200,7 @@ function gameVideo() {
 }
    sy.post(url, (error, response, data) =>
  {
-   sy.log(`gamedata:${data}`)
+   sy.log(`激励视频:${data}`)
    gameres = JSON.parse(data)
    if (gameres.success==true){
      detail += `\n点我激励视频奖励获得${gameres.items.score}`}
@@ -212,16 +218,19 @@ function readArticle() {
 }
    sy.post(url, (error, response, data) =>
  {
-   sy.log(`readdata:${data}`)
+   sy.log(`阅读奖励:${data}`)
    readres = JSON.parse(data)
-   if (readres.success==true){
-     detail += ` 阅读奖励${gameres.items.read_score}个青豆`
+    if (readres.items.max_notice == '\u770b\u592a\u4e45\u4e86\uff0c\u63621\u7bc7\u8bd5\u8bd5'){
+     detail += `    \u770b\u592a\u4e45\u4e86\uff0c\u63621\u7bc7\u8bd5\u8bd5`
      }
+  else if (readres.items.read_score !== undefined){
+     detail += `  阅读奖励${readres.items.read_score}个青豆`
+     }
+  resolve()
    })
-resolve()
  })
 }
-//文章阅读
+//文章阅读附加
 function Articlered() {      
  return new Promise((resolve, reject) => {
     const url = { 
@@ -229,10 +238,10 @@ function Articlered() {
       body: articlebodyVal,
 }
   sy.post(url, (error, response, data) =>{
-   sy.log(`reddata:${data}`)
+   sy.log(`阅读附加:${data}`)
    redres = JSON.parse(data)
    if (redres.success==true){
-     detail += ` 阅读奖励${redres.items.read_score}个青豆`  
+     detail += ` 阅读附加奖励${redres.items.read_score}个青豆`  
      }
    })
   resolve()
@@ -250,15 +259,81 @@ function rotary() {
       body: rotarbody
 }
   sy.post(url, (error, response, data) =>{
-   sy.log(`reddata:${data}`)
+   sy.log(`转盘抽奖:${data}`)
    rotaryres = JSON.parse(data)
-   if (rotaryres.status==1){
-    sy.log(rotaryres.data.score)
+   if (rotaryres.status==1&&rotaryres.data.remainTurn%notifyInterval==0){
      detail += `\n转盘奖励${rotaryres.data.score}个青豆，剩余${rotaryres.data.remainTurn}次`  
-     }
-   sy.msg(CookieName,subTitle,detail)
+    }
+   else if (rotaryres.code==10010){
+subTitle += ` 转盘${rotaryres.msg}🎉`
+    }
    })
   resolve()
+ })
+}
+
+function rotary2() {      
+ return new Promise((resolve, reject) => {
+  setTimeout(() =>  {
+const rotarbody = signheaderVal.split("&")[15]+'&'+signheaderVal.split("&")[8]+'&num=2'
+ const time = new Date().getTime()
+    const url = { 
+      url: `https://kd.youth.cn/WebApi/RotaryTable/chestReward?_=${time}`, 
+      headers: JSON.parse(signheaderVal),
+      body: rotarbody
+}
+  sy.post(url, (error, response, data) =>{
+   sy.log(`转盘宝箱2抽奖:${data}`)
+   rotaryres2 = JSON.parse(data)
+   if (rotaryres2.status==1){
+     detail += `\n转盘宝箱2奖励${rotaryres2.data.score}个青豆 `  
+       }
+     })
+   },50)
+ resolve()
+ })
+}
+function rotary3() {      
+ return new Promise((resolve, reject) => {
+  setTimeout(() =>  {
+const rotarbody = signheaderVal.split("&")[15]+'&'+signheaderVal.split("&")[8]+'&num=3'
+ const time = new Date().getTime()
+    const url = { 
+      url: `https://kd.youth.cn/WebApi/RotaryTable/chestReward?_=${time}`, 
+      headers: JSON.parse(signheaderVal),
+      body: rotarbody
+}
+  sy.post(url, (error, response, data) =>{
+   sy.log(`转盘宝箱3抽奖:${data}`)
+   rotaryres3 = JSON.parse(data)
+   if (rotaryres3.status==1){
+     detail += `\n转盘宝箱3奖励${rotaryres3.data.score}个青豆 `  
+       }
+     })
+   },100)
+ resolve()
+ })
+}
+function rotary4() {      
+ return new Promise((resolve, reject) => {
+  setTimeout(() =>  {
+const rotarbody = signheaderVal.split("&")[15]+'&'+signheaderVal.split("&")[8]+'&num=4'
+ const time = new Date().getTime()
+    const url = { 
+      url: `https://kd.youth.cn/WebApi/RotaryTable/chestReward?_=${time}`, 
+      headers: JSON.parse(signheaderVal),
+      body: rotarbody
+}
+  sy.post(url, (error, response, data) =>{
+   sy.log(`转盘宝箱4抽奖:${data}`)
+   rotaryres4 = JSON.parse(data)
+   if (rotaryres4.status==1){
+     detail += `\n转盘宝箱4奖励${rotaryres4.data.score}个青豆 `  
+       }
+     })
+   },150)
+  sy.msg(CookieName,subTitle,detail)
+ resolve()
  })
 sy.done()
 }
