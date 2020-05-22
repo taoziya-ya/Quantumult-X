@@ -1,4 +1,4 @@
-hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, m.pearkin.com, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.api.versa-ai.com,*.bjxkhc.com,api.interpreter.caiyunai.com,claritywallpaper.com
+hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, bkcd.b-cdn.net, souhu.mett.me, ayk.tmdidi.com, m.pearkin.com, www.baidu.com2.club, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.api.versa-ai.com,*.bjxkhc.com,api.interpreter.caiyunai.com,claritywallpaper.com
 
 
 
@@ -23,7 +23,7 @@ https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https:
 #大千世界
 ^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/dqsj.js
 #Pear
-^https:\/\/m\.pearkin\.com\/(api\/Movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/pear.js
+^https:\/\/ayk\.tmdidi\.com\/(api\/movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail|api\/account\/UserScore) url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/pear.js
 #淘宝比价
 ^http://amdc\.m\.taobao\.com/amdc/mobileDispatch url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
