@@ -55,5 +55,6 @@ https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.gi
 ^https:\/\/app\.nio\.com\/api\/1\/app\/daily_checkin url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.cookie.js
 #合创
 ^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/.*\/sign$ url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.cookie.js
-
-
+#电视家
+http:\/\/act\.gaoqingdianshi\.com\/\/api\/v4\/sign\/signin\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js
+http:\/\/api\.gaoqingdianshi\.com\/api\/v2\/cash\/withdrawal\?code= url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js
