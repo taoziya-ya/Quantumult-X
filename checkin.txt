@@ -68,5 +68,4 @@ http:\/\/act\.gaoqingdianshi\.com\/\/api\/v4\/sign\/signin\? url script-request-
 http:\/\/api\.gaoqingdianshi\.com\/api\/v2\/cash\/withdrawal\?code= url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js
 
 #腾讯新闻
-https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-header 
-https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js
+https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js
