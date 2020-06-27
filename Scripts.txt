@@ -1,13 +1,10 @@
-hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,biz.caiyunapp.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, bkcd.b-cdn.net, souhu.mett.me, ayk.tmdidi.com, m.pearkin.com, www.baidu.com2.club, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.api.versa-ai.com,*.bjxkhc.com,api.interpreter.caiyunai.com,claritywallpaper.com
-
+hostname= api.gotokeep.com ,api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, api.picsart.c*, api.meiease.c*, api.mvmtv.com, bkcd.b-cdn.net, souhu.mett.me, ayk.tmdidi.com, m.pearkin.com, www.baidu.com2.club, trade-acs.m.taobao.com,amdc.m.taobao.com, ios.prod.ftl.netflix.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.api.versa-ai.com,*.bjxkhc.com,api.interpreter.caiyunai.com,claritywallpaper.com,biz.caiyunapp.com
 
 
 #克拉壁纸
 ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/clarity.js
 #彩云小译
 ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/cyxy.js
-#韩剧TV
-^https\:\/\/hjapi\.bjxkhc\.com\/v2d2\/users\/.*\/member url script-response-body    https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/hanjuTV.js
 #马卡龙
 https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/mkl.js
 #轻颜相机
@@ -17,7 +14,7 @@ https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https:
 #91视频
 ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
 #彩云天气
-^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js
+^https://biz.caiyunapp.com/(v2\/user|membership_rights) url script-response-body https://raw.githubusercontent.com/LeeeMooo/ScriptOwn/master/myQx/js/caiyun.js
 #美易
 ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
 #大千世界
