@@ -2,7 +2,7 @@ hostname =daojia.jd.com, wxprdapplet.gac-nio.com, app.nio.com  ,h5.ele.me, new.a
 
 
 #万达
-^https:\/\/user-api-prd-mx\.wandafilm\.com\/user\/islogin\.api url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.cookie.js
+^https:\/\/user-api-prd-mx\.wandafilm\.com url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.cookie.js
 
 #微博
 https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
