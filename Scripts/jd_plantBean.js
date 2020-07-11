@@ -3,11 +3,7 @@
 更新时间：2020-07-06，新增完成低价包邮的任务，优化弹窗信息
 会自动关注任务中的店铺跟商品
 互助码shareCode请先手动运行脚本查看打印可看到
-// quantumultx
-[task_local]
-1 7-21/2 * * * jd_plantBean.js
-// Loon
-cron "1 7-21/2 * * *" script-path=https://github.com/nzw9314/QuantumultX/raw/master/Task/jd_plantBean.js,tag=京东种豆得豆
+
 */
 
 const $hammer = (() => {
@@ -104,11 +100,12 @@ const name = '京东种豆得豆'
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 
 var plantUuids = [ // 这个列表填入你要助力的好友的plantUuid
-    'avlxbxdxf3altnm77gkqweriwik3gtnp3vhxdwy',
-    'olmijoxgmjutztzexoyxf22tw2cb5uw4ovuv4dq',
-    'qawf5ls3ucw25yhfulu32xekqy3h7wlwy7o5jii',
-    'zanmzshzq4ykx5xirwj7y7lmki',
-    'd6wg7f6syive54q4yfrdmaddo4'
+    //Jelayy Lin
+'eur363ugt2c55dzfb4ahcvwd6qc5anqcujsuraq',
+//唐僧
+'e7jscpzp7kr6v6m7akoq7psmli5ac3f4ijdgqji',
+//C G
+'lepj3wsywsmtezllkk6hzd2rddyzg7a4cph765a',
 ]
 let currentRoundId = null;//本期活动id
 let lastRoundId = null;//上期id
