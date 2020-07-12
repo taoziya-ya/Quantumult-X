@@ -1,4 +1,3 @@
-
 */
 var body = $response.body;
 var url = $request.url;
