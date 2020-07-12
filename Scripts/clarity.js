@@ -1,10 +1,4 @@
-/*
-克拉壁纸解锁付费壁纸
-Surge4：
-http-response ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) requires-body=1,max-size=262144,script-path=resources/js/clarity.js
-QX：
-^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body clarity.js
-Surge & QX MITM = claritywallpaper.com
+
 */
 var body = $response.body;
 var url = $request.url;
