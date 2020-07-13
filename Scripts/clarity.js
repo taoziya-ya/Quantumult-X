@@ -1,8 +1,3 @@
-
-QX：
-^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body clarity.js
-
-Surge & QX MITM = claritywallpaper.com
 */
 var body = $response.body;
 var url = $request.url;
