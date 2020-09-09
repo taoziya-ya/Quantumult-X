@@ -1,28 +1,15 @@
 hostname =daojia.jd.com, wxprdapplet.gac-nio.com, app.nio.com  ,h5.ele.me, new.api.hdcj.9w9.com ,api.m.jd.com, music.163.com, c.tieba.baidu.com, weibo.com, iface?.iqiyi.com, *.smzdm.com, *.bilibili.com, *.feng.com, *.video.qq.com, *.acfun.cn, *.rrys2019.com, mobwsa.ximalaya.com, *.rr.tv, wapside.189.cn, *.weixinjia.net, h5.ele.me, *.you.163.com, apk.tw, api.dongqiudi.com, *.m.163.com, user.qunar.com, yuba.douyu.com, ios.zmzapi.com, *.y.qq.com, *.csdn.net, m.ctrip.com, m.gdoil.cn, credits.bz.mgtv.com, api-takumi.mihoyo.com,wapside.189.cn:9001,www.maomicd.com, wx.10086.cn, mtrace.qq.com, v.qq.com, www.lltxt.com, weclub.ccc.cmbchina.com, promotion.waimai.meituan.com, i.meituan.com, daojia.jd.com, api.everphoto.cn, group.baicizhan.com, maicai.api.ddxq.mobi,*.bilibili.com,110.43.90.61, zt.wps.cn,passport.suning.com, luckman.suning.com, sign.suning.com, gameapi.suning.com,api-hdcj.9w9.com,draw.jdfcloud.com,sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com,api.1sapp.com,apiwz.midukanshu.com,*.youth.cn, ios.baertt.com ,wxprdapplet.gac-nio.com,as.xiaojukeji.com,pm.m.fenqile.com,api.weibo.cn, pay.sc.weibo.com,user-api-prd-mx.wandafilm.com,api.cashtoutiao.com,appv8.qukantianxia.com,appv7.qukantx.com,api.infzm.com
 
-#南方周末
-^http:\/\/api\.infzm\.com\/mobile\/pumpkin_task\/complete? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/nfzm/nfzm.cookie.js
-
 #腾讯新闻
 #https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/txnews.js
-
-#趣看天下ck Qx
-https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/qktx_cookie.js
-
-#惠头条
-https:\/\/api\.cashtoutiao\.com url script-request-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/htt_cookie.js
 
 #万达
 ^https:\/\/user-api-prd-mx\.wandafilm\.com url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.cookie.js
 
 #微博
 https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+# 钱包签到Cookie
 https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
-
-#趣头条
-^https:\/\/api\.1sapp\.com\/sign\/info? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-^https:\/\/api\.1sapp\.com\/content\/readV2? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
 
 #中青看点
 https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
@@ -32,14 +19,6 @@ https?:\/\/ios\.baertt\.com\/v5\/article\/complete url script-request-body https
 https:\/\/ios\.baertt\.com\/v5\/article\/red_packet url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
 
 https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
-
-#米读
-^https:\/\/apiwz\.midukanshu\.com url script-request-body https://raw.githubusercontent.com/GideonSenku/scripts/master/midu/midu.cookie.js
-
-#趣头条
-^https:\/\/api\.1sapp\.com\/sign\/info? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-^https:\/\/api\.1sapp\.com\/content\/readV2? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
 
 #苏宁
 ^https:\/\/passport.suning.com\/ids\/login$ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
@@ -83,6 +62,4 @@ http:\/\/api\.gaoqingdianshi\.com\/api\/v2\/cash\/withdrawal\?code= url script-r
 #滴滴出行
 ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
 
-#分期乐
-^https://pm\.m\.fenqile\.com/route0014/star/sign/sign.json url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/fenqile/fenqile.cookie.js
-^https:\/\/pm\.m\.fenqile\.com/route0014\/app\/tab\/privilege\/convertTaskReward.json url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/fenqile/fenqile.cookie.js
+
