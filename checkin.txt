@@ -5,7 +5,6 @@ hostname =daojia.jd.com, wxprdapplet.gac-nio.com, app.nio.com  ,h5.ele.me, new.a
 
 #微博
 https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
-# 钱包签到Cookie
 https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
 
 #新浪新闻
