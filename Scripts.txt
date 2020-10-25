@@ -2,24 +2,16 @@ hostname= api.gamer.com.tw ,api.m.jd.com ,ios.fuliapps.com, apple.fuliapps.com, 
 
 #京东价宝
 ^https:\/\/apapia-history\.manmanbuy\.com\/ChromeWidgetServices\/WidgetServices\.ashx url script-request-body https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js
-#克拉壁纸
-^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/clarity.js
-#彩云小译
-^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/cyxy.js
-#马卡龙
-https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/mkl.js
-#轻颜相机
-^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/qyxj.js
+
+
 #🍌视频
 ^https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
 #91视频
 ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
-#彩云天气
-^https://biz.caiyunapp.com/(v2\/user|membership_rights) url script-response-body https://raw.githubusercontent.com/LeeeMooo/ScriptOwn/master/myQx/js/caiyun.js
+
 #美易
 ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
-#大千世界
-^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/dqsj.js
+
 #Pear 雪梨
 ^https:\/\/(www\.baidu\.com2\.club|ayk\.tmdidi\.com|m\.pearkin\.com|souhu\.mett\.me|bkcd\.b-cdn\.net)\/(api\/movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) url script-response-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/pear.js
 #淘宝比价
