@@ -1,4 +1,4 @@
-hostname = wxprdapplet.gac-nio.com, app.nio.com  ,h5.ele.me, new.api.hdcj.9w9.com ,api.m.jd.com, music.163.com, c.tieba.baidu.com, weibo.com, iface?.iqiyi.com, *.smzdm.com, *.bilibili.com, *.feng.com, *.video.qq.com, *.acfun.cn,  mobwsa.ximalaya.com, *.rr.tv, wapside.189.cn, *.weixinjia.net, h5.ele.me, *.you.163.com, apk.tw, api.dongqiudi.com, *.m.163.com, user.qunar.com, yuba.douyu.com, ios.zmzapi.com, *.y.qq.com, *.csdn.net, m.ctrip.com, m.gdoil.cn, credits.bz.mgtv.com, api-takumi.mihoyo.com,wapside.189.cn:9001,www.maomicd.com, wx.10086.cn, mtrace.qq.com, v.qq.com, www.lltxt.com, weclub.ccc.cmbchina.com, promotion.waimai.meituan.com, i.meituan.com, group.baicizhan.com, maicai.api.ddxq.mobi,*.bilibili.com,110.43.90.61, zt.wps.cn,passport.suning.com, luckman.suning.com, sign.suning.com, gameapi.suning.com,api-hdcj.9w9.com,draw.jdfcloud.com,sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com,api.1sapp.com,apiwz.midukanshu.com,*.youth.cn, ios.baertt.com ,wxprdapplet.gac-nio.com,as.xiaojukeji.com,pm.m.fenqile.com,api.weibo.cn, pay.sc.weibo.com,user-api-prd-mx.wandafilm.com,api.cashtoutiao.com,appv8.qukantianxia.com,appv7.qukantx.com,api.infzm.com,newsapi.sina.cn,www.52pojie.cn
+hostname = api.m.jd.com, music.163.com, c.tieba.baidu.com, weibo.com, iface?.iqiyi.com, *.smzdm.com, *.bilibili.com, *.feng.com, *.video.qq.com, *.acfun.cn,  mobwsa.ximalaya.com, *.rr.tv, wapside.189.cn, *.weixinjia.net, h5.ele.me, *.you.163.com, apk.tw, api.dongqiudi.com, *.m.163.com, user.qunar.com, yuba.douyu.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn, credits.bz.mgtv.com, api-takumi.mihoyo.com,wapside.189.cn:9001,www.maomicd.com, wx.10086.cn, mtrace.qq.com, v.qq.com, group.baicizhan.com, maicai.api.ddxq.mobi,*.bilibili.com,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,*.youth.cn, ios.baertt.com ,wxprdapplet.gac-nio.com,as.xiaojukeji.com,api.weibo.cn, pay.sc.weibo.com,api.infzm.com,newsapi.sina.cn,www.52pojie.cn
 
 #腾讯新闻
 #https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/txnews.js
@@ -16,20 +16,13 @@ https:\/\/ios\.baertt\.com\/v5\/article\/red_packet url script-request-body http
 
 https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
 
-#苏宁
-^https:\/\/passport.suning.com\/ids\/login$ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do) url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-
 #京东
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 #京东赚赚
-
 ^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
-#爱奇艺获取cookie
 
+#爱奇艺获取cookie
 ^https:\/\/iface\d\.iqiyi\.com\/.+?psp_cki= url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 #贴吧签到获取cookie
@@ -42,23 +35,10 @@ https?:\/\/c\.tieba\.baidu\.com\/c\/s\/login url script-request-header https://r
 #懂球帝获取cookie
 ^https:\/\/api\.dongqiudi\.com\/v2\/user\/is_login url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/dongqiudi/dongqiudi.cookie.js
 
-#美团
-^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
-
-#饿了么
-^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$ url script-request-header https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/elemGetCookies.js
-
-#蔚来
-^https:\/\/app\.nio\.com\/api\/1\/app\/daily_checkin url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.cookie.js
-
-#合创
-^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/.*\/sign$ url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.cookie.js
-
 #52破解
-
 https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
 
 #滴滴出行
-^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
+^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
 
