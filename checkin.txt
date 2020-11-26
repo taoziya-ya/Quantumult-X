@@ -1,4 +1,4 @@
-hostname = api.m.jd.com, music.163.com, c.tieba.baidu.com, weibo.com, iface?.iqiyi.com, *.smzdm.com, *.bilibili.com, *.feng.com, *.video.qq.com, *.acfun.cn,  mobwsa.ximalaya.com, *.rr.tv, wapside.189.cn, *.weixinjia.net, h5.ele.me, *.you.163.com, apk.tw, api.dongqiudi.com, *.m.163.com, user.qunar.com, yuba.douyu.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn, credits.bz.mgtv.com, api-takumi.mihoyo.com,wapside.189.cn:9001,www.maomicd.com, wx.10086.cn, mtrace.qq.com, v.qq.com, group.baicizhan.com, maicai.api.ddxq.mobi,*.bilibili.com,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,*.youth.cn, ios.baertt.com ,wxprdapplet.gac-nio.com,as.xiaojukeji.com,api.weibo.cn, pay.sc.weibo.com,api.infzm.com,newsapi.sina.cn,www.52pojie.cn
+hostname = api.m.jd.com, music.163.com, c.tieba.baidu.com, weibo.com, iface?.iqiyi.com, *.smzdm.com, *.bilibili.com, *.feng.com, *.video.qq.com, *.acfun.cn,  mobwsa.ximalaya.com, *.rr.tv, wapside.189.cn, *.weixinjia.net, h5.ele.me, *.you.163.com, apk.tw, api.dongqiudi.com, *.m.163.com, user.qunar.com, yuba.douyu.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn, credits.bz.mgtv.com, api-takumi.mihoyo.com,wapside.189.cn:9001,www.maomicd.com, wx.10086.cn, mtrace.qq.com, v.qq.com, group.baicizhan.com, maicai.api.ddxq.mobi,*.bilibili.com,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,*.youth.cn, ios.baertt.com ,wxprdapplet.gac-nio.com,as.xiaojukeji.com,api.weibo.cn, pay.sc.weibo.com,api.infzm.com,newsapi.sina.cn,www.52pojie.cn,mqqapi.reader.qq.com
 
 #腾讯新闻
 #https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/txnews.js
@@ -41,4 +41,9 @@ https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.gi
 #滴滴出行
 ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
+#企鹅读书获取cookie
+https:\/\/mqqapi\.reader\.qq\.com\/mqq\/user\/init url script-request-header https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js
+
+#企鹅读书获取时长cookie
+https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid? url script-request-header https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js
 
