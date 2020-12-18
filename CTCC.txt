@@ -1,0 +1,4 @@
+# 电信5G会员抢购
+^https://mapi\.bestpay\.com\.cn/mapi/redbag/growth/getAwardDetailInfo url response-body "status":".*", response-body "status":"EXCHANGE",
+
+hostname: mapi.bestpay.com.cn
