@@ -19,9 +19,6 @@ https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json url script-request-body htt
 #京东
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-#京东赚赚
-^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
-
 #爱奇艺获取cookie
 ^https:\/\/iface\d\.iqiyi\.com\/.+?psp_cki= url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
