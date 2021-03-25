@@ -1,8 +1,7 @@
-hostmane=e.189.cn
+hostname=e.189.cn
 
 #账户信息
 ^https?:\/\/e\.189\.cn\/store\/user\/package_detail\.do url script-request-header telecomInfinity.js
-
 
 #签到兑好礼活动Token
 https:\/\/mkt\.21cn\.com\/mkt\/api\/user\/queryActivityInfo\.do\?activityId=\d+ url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomSky.js
