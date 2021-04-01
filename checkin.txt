@@ -3,9 +3,6 @@ hostname = api.m.jd.com, c.tieba.baidu.com, weibo.com, iface?.iqiyi.com, *.video
 #腾讯新闻
 #https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/txnews.js
 
-#interCenter渠道店铺签到
-(interact_center_shopSign_getActivityInfo) url script-request-header https://raw.githubusercontent.com/monk-coder/dust/rewrite/m_get_inter_shop_sign.js
-
 #京东
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
