@@ -1,4 +1,4 @@
-hostname = api.m.jd.com, music.163.com, c.tieba.baidu.com, weibo.com, iface?.iqiyi.com, *.smzdm.com, *.bilibili.com, *.feng.com, *.video.qq.com, wapside.189.cn, *.weixinjia.net, h5.ele.me, *.you.163.com, apk.tw, api.dongqiudi.com, *.m.163.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn,wapside.189.cn:9001,mtrace.qq.com, v.qq.com, maicai.api.ddxq.mobi,*.bilibili.com,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,wxprdapplet.gac-nio.com,as.xiaojukeji.com,www.52pojie.cn,mqqapi.reader.qq.com,club.yili.com,wapside.189.cn, wapside.189.cn:9001
+hostname = api.m.jd.com, c.tieba.baidu.com, weibo.com, iface?.iqiyi.com, *.video.qq.com, wapside.189.cn, *.weixinjia.net, h5.ele.me, apk.tw, api.dongqiudi.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn,wapside.189.cn:9001,mtrace.qq.com, v.qq.com, maicai.api.ddxq.mobi,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,wxprdapplet.gac-nio.com,as.xiaojukeji.com,www.52pojie.cn,mqqapi.reader.qq.com,club.yili.com
 
 #腾讯新闻
 #https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/txnews.js
