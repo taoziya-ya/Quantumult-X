@@ -13,22 +13,22 @@ let bodyList = {
   }
 }
 let ids = {
-  '8': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '9': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '10': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '11': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '12': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '13': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '14': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '15': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '16': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '17': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '18': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '19': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '20': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '21': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '22': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk',
-  '23': 'RRA3nVNK5YX2HCUMiKdRSR16KnsZ6xk'
+  '8': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '9': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '10': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '11': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '12': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '13': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '14': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '15': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '16': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '17': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '18': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '19': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '20': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '21': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '22': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK',
+  '23': 'RRA2v2Lh5mtxYnC4j6VHrjoaDz7crQK'
 }
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
