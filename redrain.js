@@ -24,16 +24,16 @@ if ($.isNode()) {
 }
 const JD_API_HOST = 'https://api.m.jd.com/api';
 let ids = {
-   '0': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg',
-  '9': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg',
-  '11': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg',  
-  '13': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg', 
-  '15': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg', 
-  '17': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg', 
-  '19': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg', 
-  '20': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg', 
-  '21': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg', 
-  '23': 'RRA4TaJjMkzXU1xEJbbtPXFXCDTajxg', 
+   '0': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
+  '9': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
+  '11': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',  
+  '13': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE', 
+  '15': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE', 
+  '17': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE', 
+  '19': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE', 
+  '20': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE', 
+  '21': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE', 
+  '23': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE', 
 }
 !(async () => {
   if (!cookiesArr[0]) {
