@@ -22,8 +22,8 @@ let ids = {
   '16': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
   '17': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
   '18': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
-  '19': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
-  '20': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
+  '19': 'RRAKoqJYHaBPhFyuYdunFqtjeVBLDC',
+  '20': 'RRAKoqJYHaBPhFyuYdunFqtjeVBLDC',
   '21': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
   '22': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
   '23': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE'
