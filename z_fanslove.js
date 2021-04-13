@@ -8,7 +8,7 @@
 ============Quantumultx===============
 [task_local]
 #粉丝互动
-3 10 * * * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_fanslove.js, tag=粉丝互动,  enabled=true
+  3 10 * * * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_fanslove.js, tag=粉丝互动,  enabled=true
 [rewrite_local]
 ^https://lzkjdz\-isv\.isvjcloud\.com\/wxFansInterActionActivity\/activityContent url script-response-body https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/jd_getFanslove.js
 ================Loon==============
