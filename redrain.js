@@ -33,7 +33,7 @@ let ids = {
   '19': 'RRA2dwfH47xq3QNX32mHLGcG4FzBmBa',
   '20': 'RRAKoqJYHaBPhFyuYdunFqtjeVBLDC',
   '21': 'RRA2VFFiPMXaspNre68GLyvRPU1vGxA',
-  '22': 'RRAAYPHu6s5pWzYMqmfNygvvgJTKdq',
+  '22': 'RRA3gsDuBBP5kYqknjTZ2h3VLkEpiT3',
   '23': 'RRAAYPHu6s5pWzYMqmfNygvvgJTKdq'
 }
 const notify = $.isNode() ? require('./sendNotify') : '';
