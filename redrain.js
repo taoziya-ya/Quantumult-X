@@ -14,17 +14,17 @@ let ids = {
   '0': 'RRA3YwTApQMXk5yvcjLsADfbYkNAgv6',
   '11': 'RRA2CnovS9KVTTwBD9NV7o4kc3P8PTN',
   '12': 'RRAzn5yQXcYJFMzyucMtGntDEgQUcV',
-  '13': 'RRA3CMggYFzqDma3Pz9DbPbFPs8unYk',
+  '13': 'RRA2CnovS9KVTTwBD9NV7o4kc3P8PTN',
   '14': 'RRA85AvVYJBvkmwpDhn4Y9cMRXV9mH',
-  '15': 'RRAAYPHu6s5pWzYMqmfNygvvgJTKdq',
+  '15': 'RRA2CnovS9KVTTwBD9NV7o4kc3P8PTN',
   '16': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
-  '17': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
+  '17': 'RRA2CnovS9KVTTwBD9NV7o4kc3P8PTN',
   '18': 'RRA4Kr8hch51J49qasBvEv8Agf8chAD',
-  '19': 'RRA2dwfH47xq3QNX32mHLGcG4FzBmBa',
+  '19': 'RRA2CnovS9KVTTwBD9NV7o4kc3P8PTN',
   '20': 'RRAKoqJYHaBPhFyuYdunFqtjeVBLDC',
-  '21': 'RRA2VFFiPMXaspNre68GLyvRPU1vGxA',
+  '21': 'RRA2CnovS9KVTTwBD9NV7o4kc3P8PTN',
   '22': 'RRA3gsDuBBP5kYqknjTZ2h3VLkEpiT3',
-  '23': 'RRA2qAfXJe5iMPfa7f5VCgviBaxjG3D'
+  '23': 'RRA2CnovS9KVTTwBD9NV7o4kc3P8PTN'
 }
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
