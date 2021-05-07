@@ -1,5 +1,7 @@
-hostname = daojia.jd.com,api.m.jd.com,iface?.iqiyi.com, *.video.qq.com, wapside.189.cn, *.weixinjia.net, h5.ele.me, apk.tw, api.dongqiudi.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn,wapside.189.cn:9001,mtrace.qq.com, v.qq.com, maicai.api.ddxq.mobi,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,wxprdapplet.gac-nio.com,as.xiaojukeji.com,www.52pojie.cn,mqqapi.reader.qq.com,club.yili.com
+hostname = daojia.jd.com,api.m.jd.com,iface?.iqiyi.com, *.video.qq.com, wapside.189.cn, *.weixinjia.net, h5.ele.me, apk.tw, api.dongqiudi.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn,wapside.189.cn:9001,mtrace.qq.com, v.qq.com, maicai.api.ddxq.mobi,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,wxprdapplet.gac-nio.com,as.xiaojukeji.com,www.52pojie.cn,mqqapi.reader.qq.com,club.yili.com,account.huami.com
 
+#小米运动
+^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://jdsharedresourcescdn.azureedge.net/jdresource/xmSports.js
 #京东到家
 ^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.cookie.js
 
