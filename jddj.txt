@@ -1,0 +1,8 @@
+hostname = daojia.jd.com
+
+daojia.jd.com/html/index.html url script-request-header https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_getck.js 
+
+
+
+
+
