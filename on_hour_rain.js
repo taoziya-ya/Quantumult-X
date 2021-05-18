@@ -1,5 +1,5 @@
 
-*/
+
 const $ = new Env('超级直播间红包雨');
 let allMessage = '', id = 'RRA3mYmDhvzgxdpAJuscqHt32VNDqCM';
 let bodyList = {
