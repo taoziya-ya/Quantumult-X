@@ -1,24 +1,7 @@
-/*
-超级直播间红包雨
-下一场超级直播间时间:05月11日  20:00，直播间地址：https://h5.m.jd.com/dev/3pbY8ZuCx4ML99uttZKLHC2QcAMn/live.html?id=4085977
-脚本兼容: Quantumult X, Surge, Loon, JSBox, Node.js
-==============Quantumult X==============
-[task_local]
-#超级直播间红包雨
-0,30 0-23/1 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live_redrain.js, tag=超级直播间红包雨, enabled=true
 
-==============Loon==============
-[Script]
-cron "0,30 0-23/1 * * *" script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live_redrain.js,tag=超级直播间红包雨
-
-================Surge===============
-超级直播间红包雨 = type=cron,cronexp="0,30 0-23/1 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live_redrain.js
-
-===============小火箭==========
-超级直播间红包雨 = type=cron,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live_redrain.js, cronexpr="0,30 0-23/1 * * *", timeout=3600, enable=true
 */
 const $ = new Env('超级直播间红包雨');
-let allMessage = '', id = 'RRA3YwTApQMXk5yvcjLsADfbYkNAgv6';
+let allMessage = '', id = 'RRA3mYmDhvzgxdpAJuscqHt32VNDqCM';
 let bodyList = {
   "11": {
     "url": "https://api.m.jd.com/client.action?functionId=liveActivityV946&uuid=8888888&client=apple&clientVersion=9.4.1&st=1620614253070&sign=813e1c41e645e117616678bfc34c88fe&sv=111",
