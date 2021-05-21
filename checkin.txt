@@ -21,8 +21,7 @@ https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.gi
 
 #滴滴出行
 ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
-
-^https:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/watering url script-request-header https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_getToken.js
+^https:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/watering url script-request-body https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_getToken.js
 #伊利
 https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call url script-request-body https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js
 
