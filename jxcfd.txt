@@ -1,2 +1,0 @@
-hostname=wq.jd.com, m.jingxi.com
-
