@@ -1,7 +1,7 @@
 
 
 const $ = new Env('半点红包雨');
-let allMessage = '', id = 'RRA4CyMgix7wbYp7e88UAzQkF2KPNd9';
+let allMessage = '', id = 'RRAiGK6E6HiztiF5rgNREANui9m7qy';
 let bodyList = {
   "11": {
     "url": "https://api.m.jd.com/client.action?functionId=liveActivityV946&uuid=8888888&client=apple&clientVersion=9.4.1&st=1620614253070&sign=813e1c41e645e117616678bfc34c88fe&sv=111",
