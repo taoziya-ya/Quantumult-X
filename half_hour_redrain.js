@@ -1,5 +1,4 @@
 
-
 const $ = new Env('半点红包雨');
 let allMessage = '', id = 'RRAiGK6E6HiztiF5rgNREANui9m7qy';
 let bodyList = {
