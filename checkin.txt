@@ -1,7 +1,5 @@
-hostname = iface?.iqiyi.com, *.video.qq.com, wapside.189.cn, *.weixinjia.net, h5.ele.me, apk.tw, api.dongqiudi.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn,wapside.189.cn:9001,mtrace.qq.com, v.qq.com, maicai.api.ddxq.mobi,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,wxprdapplet.gac-nio.com,as.xiaojukeji.com,www.52pojie.cn,mqqapi.reader.qq.com,club.yili.com,account.huami.com
+hostname = iface?.iqiyi.com, *.video.qq.com, wapside.189.cn, *.weixinjia.net, h5.ele.me, apk.tw, api.dongqiudi.com, ios.zmzapi.com, *.y.qq.com, m.gdoil.cn,wapside.189.cn:9001,mtrace.qq.com, v.qq.com, maicai.api.ddxq.mobi,110.43.90.61,draw.jdfcloud.com,api.1sapp.com,wxprdapplet.gac-nio.com,as.xiaojukeji.com,www.52pojie.cn,mqqapi.reader.qq.com,club.yili.com
 
-#小米运动
-^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://jdsharedresourcescdn.azureedge.net/jdresource/xmSports.js
 
 #腾讯新闻
 #https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body https://raw.githubusercontent.com/taoziya-ya/Quantumult-X/master/Scripts/txnews.js
@@ -20,8 +18,8 @@ hostname = iface?.iqiyi.com, *.video.qq.com, wapside.189.cn, *.weixinjia.net, h5
 https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
 
 #滴滴出行
-^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
-^https:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/watering url script-request-body https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_getToken.js
+#^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+#^https:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/watering url script-request-body https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_getToken.js
 #伊利
 https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call url script-request-body https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js
 
